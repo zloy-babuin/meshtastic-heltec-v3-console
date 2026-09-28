@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meshtui"
+dynamic = ["version"]
+description = "Консольный (TUI) клиент Meshtastic: чат, узлы, эфир, настройки"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "meshtastic>=2.7",
+    "textual>=1.0",
+]
+
+[project.scripts]
+meshtui = "meshtui.app:main"
+
+[tool.setuptools]
+packages = ["meshtui"]
+
+[tool.setuptools.dynamic]
+version = { attr = "meshtui.__version__" }
