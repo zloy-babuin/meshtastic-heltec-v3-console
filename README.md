@@ -52,3 +52,7 @@ meshtui --log debug.log       # отладочный лог библиотеки
 - `meshtui/radio.py` — обёртка над библиотекой `meshtastic`: подключение, события, команды.
 - `meshtui/config_form.py` — форма секции настроек по protobuf-дескриптору.
 - `meshtui/app.py` — приложение на [Textual](https://textual.textualize.io).
+
+## Лицензия
+
+[MIT](LICENSE)
